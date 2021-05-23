@@ -1,0 +1,176 @@
+/*  for width less than 1025px */
+
+@media (max-width: 1024px) {
+    * {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* header */
+    header .bigger .nav-bar,
+    header .bigger .mail {
+        display: none;
+    }
+    .bigger {
+        justify-content: flex-start;
+    }
+    .smaller {
+        display: block;
+        margin-right: 10px;
+    }
+    /* section-1 */
+    .main-section-head {
+        margin: 2.5em auto 0 auto;
+        flex-direction: column;
+    }
+    .main-section-head a svg {
+        width: 100%;
+    }
+    /* section-2 */
+    .top-news {
+        width: 100%;
+        padding: 0 40px;
+        margin: 50px auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+        grid-template-rows: repeat(4, minmax(auto, 1fr));
+        grid-gap: 10px;
+    }
+    .top-news .showcase:first-child {
+        grid-column: 1 / -1;
+        grid-row: 1 / span 2;
+    }
+    .top-news .showcase:nth-child(2),
+    .top-news .showcase:nth-child(3) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .top-news .showcase:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .top-news .showcase:last-child {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    /* section-3 */
+    .pop-articles .articles ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .pop-articles .articles ul li {
+        padding-bottom: 20px;
+    }
+    /* section-4 */
+    .latest-story .stories .story {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    /* section-5 */
+    .channels {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .channels .channel {
+        flex: 1;
+        flex-basis: 45%;
+    }
+    /* section-6 */
+    .form-field {
+        width: 70%;
+        margin: 20px auto;
+        border-radius: 4px;
+        padding: 5px 0;
+        justify-content: baseline;
+    }
+    .form-field form button {
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+    /* footer */
+    .footer-top {
+        flex-wrap: wrap;
+    }
+    .part1 {
+        flex-basis: 100%;
+    }
+    .part1 .social-2 {
+        margin: 20px 0;
+    }
+    .part2,
+    .part3 {
+        padding-left: 10px;
+        flex-basis: 50%;
+    }
+}
+
+
+/* for width less than 769px */
+
+@media (max-width: 768px) {
+    /* section-2 */
+    .top-news {
+        padding: 0 25px;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+        grid-template-rows: repeat(4, minmax(auto, 1fr));
+        grid-gap: 10px;
+    }
+    .top-news .showcase:first-child {
+        grid-column: 1 / -1;
+        grid-row: span 1;
+    }
+    .top-news .showcase:nth-child(2),
+    .top-news .showcase:nth-child(3) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .top-news .showcase:nth-child(4) {
+        grid-column: span 2;
+        grid-row: 4 / span 1;
+    }
+    .top-news .showcase:last-child {
+        grid-column: span 2;
+        grid-row: 3 / span 1;
+    }
+    /* section-3 */
+    .pop-articles .articles ul {
+        padding: 0 25px;
+        height: auto;
+    }
+    .pop-articles .articles ul li {
+        padding-bottom: 20px;
+    }
+    /* section-4 */
+    .latest-story .stories {
+        flex-direction: column;
+    }
+    .latest-story .stories .story {
+        flex-direction: row;
+        max-width: 100%;
+    }
+    .latest-story .stories .story .image {
+        flex-basis: 80%;
+        background: white;
+    }
+    .latest-story .stories .story .headline {
+        flex-basis: 100%;
+        margin-left: 10px;
+    }
+    .latest-story .stories .story .image img {
+        background-size: cover;
+        object-fit: cover;
+        padding: 0;
+    }
+    /* section-8 */
+    .work-flex {
+        flex-direction: column;
+    }
+    .work-flex .info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
